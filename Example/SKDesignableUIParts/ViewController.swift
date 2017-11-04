@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import SKDesignableUIParts
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: SKDesignableButton!
+    @IBOutlet weak var textField: SKTextFieledView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        button.titleLabel?.adjustsFontSizeToFitWidth = true
+        textField.borderOnlyButtom = true
     }
 
     override func didReceiveMemoryWarning() {

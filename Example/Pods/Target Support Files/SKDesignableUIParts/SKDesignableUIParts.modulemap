@@ -1,0 +1,6 @@
+framework module SKDesignableUIParts {
+  umbrella header "SKDesignableUIParts-umbrella.h"
+
+  export *
+  module * { export * }
+}

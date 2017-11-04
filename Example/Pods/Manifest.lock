@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
+  - SKDesignableUIParts (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - SKDesignableUIParts (from `../`)
+
+EXTERNAL SOURCES:
+  SKDesignableUIParts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SKDesignableUIParts: 480aef230fb544ae0f0c12f886b56b066f926fd3
+
+PODFILE CHECKSUM: 1d47d4d5ffae73a549ed4ee73e8ff1b38618db66
+
+COCOAPODS: 1.2.1
