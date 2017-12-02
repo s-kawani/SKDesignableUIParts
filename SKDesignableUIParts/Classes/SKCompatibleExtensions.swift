@@ -9,6 +9,7 @@ import UIKit
 
 
 public struct Extension<Base> {
+    
     public let base: Base
     public init (_ base: Base) {
         self.base = base
@@ -22,6 +23,8 @@ public protocol ExtensionCompatible {
 }
 
 public extension ExtensionCompatible {
+    
+
     public static var ex: Extension<Self>.Type {
         return Extension<Self>.self
     }

@@ -79,6 +79,18 @@ final public class SKTextFieledView: UITextField, UITextFieldDelegate {
     
     public func textFieldDidBeginEditing(_ textField: UITextField) {
     }
+    
+    public var insets = UIEdgeInsetsMake(0, 0, 0, 0)
+    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        var rect = bounds
+        rect.origin.x -= insets.left
+        rect.origin.y -= insets.top
+        rect.size.width += insets.left + insets.right
+        rect.size.height += insets.top + insets.bottom
+        
+        // 拡大したViewサイズがタップ領域に含まれているかどうかを返します
+        return rect.contains(point)
+    }
 
 }
 

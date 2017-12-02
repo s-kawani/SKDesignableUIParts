@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         textField.borderOnlyButtom = true
+        self.navigationItem.title = "ログイン"
+        textField.insets = UIEdgeInsetsMake(50, 50, 50, 50)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,5 +27,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    @IBAction func pushedButton(_ sender: Any) {
+        
+        let vc = UIPartsTableViewController.ex.instantiate(withStoryboard: "Main")
+        self.navigationController?.pushViewController(vc, animated: true)
 
+    }
+}

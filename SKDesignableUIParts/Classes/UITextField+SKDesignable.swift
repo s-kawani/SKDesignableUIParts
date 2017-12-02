@@ -6,8 +6,6 @@
 //
 
 
-//extension UITextField:ExtensionCompatible {}
-
 public extension Extension where Base:UITextField {
     
     public func onlyBorderBottom(withColor:CGColor) {

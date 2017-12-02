@@ -82,7 +82,11 @@
 		92722CBF1FA3A7D500CA55A8 /* SKTextFieledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92722CBE1FA3A7D500CA55A8 /* SKTextFieledView.swift */; };
 		92722CC11FA3A84F00CA55A8 /* SKDesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92722CC01FA3A84F00CA55A8 /* SKDesignableButton.swift */; };
 		92722CC41FA3A8C000CA55A8 /* UIView+SKDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92722CC31FA3A8C000CA55A8 /* UIView+SKDesignable.swift */; };
+		9294A8601FB5A3430006C675 /* UIViewController+StoryBoardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294A85F1FB5A3430006C675 /* UIViewController+StoryBoardInstantiatable.swift */; };
 		92A444381FA6258E00EA6F82 /* Collection+SafeBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A444371FA6258E00EA6F82 /* Collection+SafeBounds.swift */; };
+		92BC55201FC2ECF0000EB0BB /* UIApplication+topView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC551F1FC2ECF0000EB0BB /* UIApplication+topView.swift */; };
+		92F651051FB477C300EF3D61 /* NSObject+Classname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F651041FB477C300EF3D61 /* NSObject+Classname.swift */; };
+		92F651071FB482C800EF3D61 /* UITableView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F651061FB482C800EF3D61 /* UITableView+Util.swift */; };
 		96132E7432F8DD315A88A07C6B4F9C72 /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9720E44CC5EEB092E90D118DC69352 /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		988EED125395950177DC14AF9BC87D8D /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FE3EC8226C0B8E6FC7B845B39DEDC /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		98FE4FE9F8C8FE686D394843E233E5D5 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD07575CFDE63DE6412F425FDBED71 /* SuiteHooks.swift */; };
@@ -248,7 +252,11 @@
 		92722CBE1FA3A7D500CA55A8 /* SKTextFieledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTextFieledView.swift; sourceTree = "<group>"; };
 		92722CC01FA3A84F00CA55A8 /* SKDesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDesignableButton.swift; sourceTree = "<group>"; };
 		92722CC31FA3A8C000CA55A8 /* UIView+SKDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SKDesignable.swift"; sourceTree = "<group>"; };
+		9294A85F1FB5A3430006C675 /* UIViewController+StoryBoardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryBoardInstantiatable.swift"; sourceTree = "<group>"; };
 		92A444371FA6258E00EA6F82 /* Collection+SafeBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeBounds.swift"; sourceTree = "<group>"; };
+		92BC551F1FC2ECF0000EB0BB /* UIApplication+topView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+topView.swift"; sourceTree = "<group>"; };
+		92F651041FB477C300EF3D61 /* NSObject+Classname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Classname.swift"; sourceTree = "<group>"; };
+		92F651061FB482C800EF3D61 /* UITableView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Util.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95614EC69755CACD43F81B3D967B88A9 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		980107C107885320335941A4471C9DBA /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
@@ -603,6 +611,10 @@
 				92722CC01FA3A84F00CA55A8 /* SKDesignableButton.swift */,
 				92722CBE1FA3A7D500CA55A8 /* SKTextFieledView.swift */,
 				92722CBA1FA3A78B00CA55A8 /* SKGradationView.swift */,
+				92F651041FB477C300EF3D61 /* NSObject+Classname.swift */,
+				92F651061FB482C800EF3D61 /* UITableView+Util.swift */,
+				9294A85F1FB5A3430006C675 /* UIViewController+StoryBoardInstantiatable.swift */,
+				92BC551F1FC2ECF0000EB0BB /* UIApplication+topView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -963,11 +975,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F651071FB482C800EF3D61 /* UITableView+Util.swift in Sources */,
 				92722CBF1FA3A7D500CA55A8 /* SKTextFieledView.swift in Sources */,
 				923A429D1FADA88B0002251F /* UITextField+SKDesignable.swift in Sources */,
 				92722CBD1FA3A78B00CA55A8 /* SKCompatibleExtensions.swift in Sources */,
+				92F651051FB477C300EF3D61 /* NSObject+Classname.swift in Sources */,
 				92722CBC1FA3A78B00CA55A8 /* SKGradationView.swift in Sources */,
+				9294A8601FB5A3430006C675 /* UIViewController+StoryBoardInstantiatable.swift in Sources */,
 				6AA83D42144B42CEDC0B3553530C6C31 /* SKDesignableUIParts-dummy.m in Sources */,
+				92BC55201FC2ECF0000EB0BB /* UIApplication+topView.swift in Sources */,
 				925BE3A91FA62A8C007BFD3C /* String+URL.swift in Sources */,
 				92A444381FA6258E00EA6F82 /* Collection+SafeBounds.swift in Sources */,
 				92722CC41FA3A8C000CA55A8 /* UIView+SKDesignable.swift in Sources */,
